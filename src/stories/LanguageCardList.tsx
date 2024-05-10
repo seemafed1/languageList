@@ -7,10 +7,10 @@ const LanguageCardList = ({ languageData }: any) => {
    
     return (
         <div className='list'>
-            <div className='list-image' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            {/* <div className='list-image' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <Image src={horecaLogo} alt='no image' />
                 <h1 >Choose Language</h1>
-            </div>
+            </div> */}
             <div className='language-grid'>
                 {
                     languageData && languageData?.map((language: any) => (

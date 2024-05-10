@@ -23,15 +23,3 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: LanguageData[0],
 };
-
-// export const Secondary: Story = {
-//   args: LanguageData[0],
-// };
-
-// export const Large: Story = {
-//   args: LanguageData[0],
-// };
-
-// export const Small: Story = {
-//   args: LanguageData[0],
-// };
