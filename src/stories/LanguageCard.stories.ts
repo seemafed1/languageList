@@ -13,6 +13,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     backgroundColor: { control: 'color' },
+    hoverColor: { control: 'color' },
   },
   args: { onClick: fn() },
 } satisfies Meta<typeof LanguageCard>;

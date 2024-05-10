@@ -1,5 +1,4 @@
 .list {
-    background: #002351;
     color: white;
     padding: 1.5rem;
     font-family: Arial, sans-serif;
@@ -8,9 +7,8 @@
 .language-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    grid-gap: 10px 0;
     width: 296px;
-    height: 787px;
 }
 
 .list-image {
