@@ -1,0 +1,25 @@
+.card{
+    background-color: #044193;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 130px;
+    height: 110px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+.card:hover{
+    background-color: #FE8B4C;
+    color: white;
+}
+.card h1{
+    padding-top: 1.2rem;
+    margin-bottom: 0;
+    font-size: 32px;
+}
+.card p{
+    font-weight: 400;
+    size: 16px;
+    margin-top: 4px;
+}
+
