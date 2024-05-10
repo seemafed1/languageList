@@ -26,22 +26,22 @@ export const Primary: Story = {
   },
 };
 
-export const Secondary: Story = {
-  args: {
-    languageData: LanguageData
-  },
-};
+// export const Secondary: Story = {
+//   args: {
+//     languageData: LanguageData
+//   },
+// };
 
-export const Large: Story = {
-  args: {
-    size: 'large',
-    languageData: LanguageData
-  },
-};
+// export const Large: Story = {
+//   args: {
+//     size: 'large',
+//     languageData: LanguageData
+//   },
+// };
 
-export const Small: Story = {
-  args: {
-    size: 'small',
-    languageData: LanguageData
-  },
-};
+// export const Small: Story = {
+//   args: {
+//     size: 'small',
+//     languageData: LanguageData
+//   },
+// };
