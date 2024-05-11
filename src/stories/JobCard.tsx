@@ -59,8 +59,8 @@ const JobCard = ({ city, salary, applicants, jobType, postedDate, urgentHiring, 
                 </div>
             </div>
             <div className='btn'>
-                <button className='btn-1' onClick={()=>console.log('Job Card is created')}>Apply</button>
-                <button className='btn-2'>View</button>
+                <button type='button' className='btn-1' onClick={()=>console.log('Job Card is created')}>Apply</button>
+                <button type='button' className='btn-2'>View</button>
             </div>
         </div>
     );
