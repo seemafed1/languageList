@@ -1,0 +1,125 @@
+body {
+    /* background-color: rgb(212, 208, 208); */
+    font-family: Arial, sans-serif;
+}
+
+.job-card {
+    background-color: white;
+    border-radius: 9px;
+    padding: 1rem;
+    width: 328px;
+    height: 200px;
+    box-shadow: 0 0 1px gray;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-title{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+}
+.job-title .fire{
+    margin-top: -2.1rem;
+    display: flex;
+    flex-direction: column;    
+}
+.job-title .fire{
+    justify-content: center;
+ align-items: center;
+}
+.job-title h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 23px;
+    opacity: 0.8;
+}
+.job-title .fire p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #FE8B4C;
+}
+
+.job-applicants {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.job-applicants p {
+    margin: 0;
+    font-weight: 400;
+    font-style: 14px;
+}
+.job-applicants .duration{
+    opacity: 0.5;
+    font-size: 13px;
+}
+.job-applicants .hiring{
+    color: #FE8B4C;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.job-Type {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 0.3rem 0;
+}
+
+.job-city {
+    margin: 0;
+    color: #3AD3B0;
+    font-size: 17px;
+}
+.job-Type .job-Type-info{
+display: flex;
+align-items: center;
+}
+
+.job-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+
+.job-info p {
+    opacity: 0.4;
+    margin: 0 6px;
+}
+.job-info-logo{
+    display: flex;
+    align-items: center;
+    padding:  0.3rem 0;
+}
+
+.btn .btn-1 {
+    background-color: #002351;
+    color: white;
+    width: 187px;
+    height: 41px;
+    border-radius: 10px;
+    border: 1px;
+    font-size: 14px;
+    padding: 10px,95px,10px,95px;
+    font-weight: 600;
+    margin:  0.3rem 0;
+    cursor: pointer;
+}
+.btn .btn-2{
+    background-color: white;
+    color: #002351;
+    width: 101px;
+    height: 41px;
+    border: none;
+    font-size: 14px;
+    font-weight: 100;
+    padding-left: 3.5rem;
+    margin:  0.3rem 0;
+    cursor: pointer;
+    background: transparent;
+}
