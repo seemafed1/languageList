@@ -2,7 +2,9 @@
     background-color: #044193;
     color: white;
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 130px;
     height: 110px;
     cursor: pointer;
@@ -15,7 +17,6 @@
 }
 
 .card h1{
-    /* padding-top: 1rem; */
     margin-bottom: 0;
     font-size: 32px;
 }
