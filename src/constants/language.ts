@@ -2,7 +2,7 @@ export const LanguageData =  [
     {
       id: 1,
       banner: 'A',
-      title: 'English',
+      title: 'English'
     },
     {
       id: 2,

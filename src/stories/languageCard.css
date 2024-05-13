@@ -8,12 +8,14 @@
     cursor: pointer;
     font-family: Arial, sans-serif;
 }
+
 .card:hover{
     background-color: #FE8B4C;
     color: white;
 }
+
 .card h1{
-    padding-top: 1.2rem;
+    /* padding-top: 1rem; */
     margin-bottom: 0;
     font-size: 32px;
 }
