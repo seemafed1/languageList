@@ -1,0 +1,129 @@
+.main{
+    width: 60%;
+}
+.cv {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    column-gap: 2rem;
+    padding: 1rem 4rem;
+    background-color: rgb(236, 234, 234);
+}
+.user-info {
+    padding: 1.2rem 0;
+    opacity: 0.8;
+}
+.user-info p {
+    padding: 0.2rem 0;
+}
+
+hr {
+    background-color: rgb(29, 29, 29);
+    height: 0.2rem;
+    opacity: 0.7;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.education-info {
+ padding: 0.5rem 0;
+}
+.education-data {
+    padding: 0.5rem 0;
+}
+.education-data h2{
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.education-data h3, .award p{
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.education-data p{
+    font-size: 14px;
+    opacity: 0.5;
+}
+.skills {
+    padding: 0.5rem 0;
+}
+.skill p{
+    padding: 0.2rem 0;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.name{
+    font-size: 45px;
+    font-weight: bold;
+    opacity: 0.7;
+    color: rgb(216, 202, 6);
+}
+.experience h2 {
+    font-size: 25px;
+    opacity: 0.7;
+    color: red;
+    padding: 0 0 0.5rem 0;
+}
+.sub-exp{
+    padding: 1rem 4rem;
+}
+.links, .awards {
+    padding: 0.6rem 0;
+}
+.links span {
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+.about{
+    padding: 0.5rem 0;
+}
+.about p {
+    padding: 0 0 0.6rem 0;
+    opacity: 0.7;
+}
+
+.awards-info{
+    padding:  0.5rem 0;
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between;
+}
+.award p {
+  padding: 0.2rem 0;
+}
+.expedience-info{
+    padding:  0.5rem 0;
+}
+.exp-detail {
+    padding:  0.5rem 0;
+}
+.exp-detail p {
+    opacity: 0.7;
+}
+.reference {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.7;
+}
+.reference .ref h2{
+ font-size: 19px;
+ font-weight: 650;
+ color: black;
+ padding: 0;
+ opacity: 0.9;
+}
+
+.reference-info{
+    padding: 0.4rem 0;
+    font-size: 13px;
+}
+.reference-info span{
+    font-weight: bold;
+}
