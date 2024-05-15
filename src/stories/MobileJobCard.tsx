@@ -7,7 +7,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import Image from 'next/image';
 import fireImage from './assets/webImages/fireImage.png';
 import jobCardImg from './assets/webImages/jobCardImg.png';
-import './jobCard.css';
+import './mobileJobCard.css';
 
 type Props = {
     city: string,
