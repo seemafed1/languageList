@@ -1,20 +1,13 @@
-import Image from 'next/image';
-import React from 'react';
-import './jobCard.css'
-import jobCardImg from './assets/webImages/jobCardImg.png'
-import fireImage from './assets/webImages/fireImage.png'
-import locationImage from './assets/webImages/locationImage.png'
-import uim_bag from './assets/webImages/uim_bag.png'
-import Rs_Img from './assets/webImages/Rs.png'
-import userLogo from './assets/webImages/userLogo.png'
-import shareLogo from './assets/webImages/shareLogo.png'
-import saveLogo from './assets/webImages/saveLogo.png'
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import WorkIcon from '@mui/icons-material/Work';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
 import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PersonIcon from '@mui/icons-material/Person';
 import ShareIcon from '@mui/icons-material/Share';
-import BookmarkIcon from '@mui/icons-material/Bookmark';
+import WorkIcon from '@mui/icons-material/Work';
+import Image from 'next/image';
+import fireImage from './assets/webImages/fireImage.png';
+import jobCardImg from './assets/webImages/jobCardImg.png';
+import './jobCard.css';
 
 type Props = {
     city: string,

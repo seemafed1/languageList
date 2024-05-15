@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import JobCard from './JobCard';
+import JobCard from './MobileJobCard';
 
 const meta = {
   title: 'Example/JobCard',
@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    primary: true,
+    // primary: true,
     brandName: 'Indian Bier House',
     department: 'Executive Chef ',
     city: 'Pune', 
