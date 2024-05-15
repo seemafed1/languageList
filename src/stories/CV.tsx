@@ -4,56 +4,91 @@ import Education from './Education';
 import Experience from './Experience';
 
 type EducationProps = {
-    levelOfEducation: string,
-    institution: string,
-    cgpa: string,
-    graduarionYear: string
+  levelOfEducation: string,
+  institution: string,
+  cgpa: string,
+  graduarionYear: string
 }
 type AwardProps = {
-    competion: string,
-    brandName: string,
-    department: string,
-    position: string
+  competion: string,
+  brandName: string,
+  department: string,
+  position: string
 }
 type ReferenceProps = {
-    name: string,
-    companyName: string,
-    designation: string,
-    phone: string,
-    email: string
+  name: string,
+  companyName: string,
+  designation: string,
+  phone: string,
+  email: string
 }
 type ExperienceProps = {
-    duration: string,
-    companyName: string,
-    address: string,
-    department: string, 
-    position: string
+  duration: string,
+  companyName: string,
+  address: string,
+  department: string,
+  position: string
 }
 type Props = {
-    skills: string[],
-    educations: EducationProps[],
-    languages: string[],
-    awards: AwardProps[],
-    references: ReferenceProps[],
-    experience: ExperienceProps[]
-    backgroundColor?: string,
+  skills: string[],
+  educations: EducationProps[],
+  languages: string[],
+  awards: AwardProps[],
+  references: ReferenceProps[],
+  experience: ExperienceProps[],
+  backgroundColor?: string,
+  name: string,
+  designation: string,
+  image: string,
+  about: string,
+  portfolio: string,
+  newsletter: string,
+  phone: string,
+  whatsApp: string,
+  email: string,
+  instagram: string,
+  facebook: string,
+  linkedin: string,
+  address: string
 }
 
-const CV = ({skills, educations, languages, awards, references, experience, backgroundColor}: Props) => {
-    return (
-        <div>
+const CV = ({ skills, educations, languages, awards, references, experience, name, designation, image, about, portfolio, newsletter, phone, whatsApp, email, instagram, facebook, linkedin, address, backgroundColor }: Props) => {
+  return (
+    <div>
       <div className='main'>
-        <div className='navbar' style={{backgroundColor: backgroundColor}}></div>
+        <div className='navbar' style={{ backgroundColor: backgroundColor }}></div>
         <div className='cv '>
-          <Education educations={educations} skills={skills} languages={languages}/>
-          <Experience  awards={awards} references={references} experience={experience} backgroundColor={backgroundColor}/>
+          <Education 
+          educations={educations} 
+          skills={skills} 
+          languages={languages}
+          image={image}
+          phone={phone}
+          whatsApp={whatsApp}
+          email={email}
+          instagram={instagram}
+          facebook={facebook}
+          linkedin={linkedin}
+          address={address}
+          />
+          <Experience 
+          awards={awards} 
+          references={references} 
+          experience={experience} 
+          name={name}
+          designation={designation}
+          backgroundColor={backgroundColor} 
+          about={about}
+          portfolio={portfolio}
+          newsletter={newsletter}
+          />
         </div>
       </div>
       <div className='next-page'>
         {
           experience.length > 4 &&
           <div className='next-page-main '>
-            <div className='navbar' style={{backgroundColor: backgroundColor}}></div>
+            <div className='navbar' style={{ backgroundColor: backgroundColor }}></div>
             <div className='sub-exp'>
               {
                 experience && experience.slice(4).map((experience: any) => (
@@ -69,7 +104,7 @@ const CV = ({skills, educations, languages, awards, references, experience, back
         }
       </div>
     </div>
-    );
+  );
 }
 
 export default CV;

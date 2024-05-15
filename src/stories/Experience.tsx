@@ -1,23 +1,18 @@
-import { awards, experience, references } from '@/constants/create-cv';
-import React from 'react';
-import './cv.css'
-import { Timeline } from '@mui/icons-material';
-import { TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineOppositeContent, TimelineSeparator } from '@mui/lab';
-import { Typography } from '@mui/material';
+import './cv.css';
 
-const Experience = ({ awards, references, experience, backgroundColor }: any) => {
+const Experience = ({ awards, references, experience, name, designation, about, portfolio, newsletter, backgroundColor }: any) => {
   return (
     <div className='experience'>
-      <h1 className='name' style={{ color: backgroundColor }}>Poonam Singh</h1>
-      <h2>Director</h2>
+      <h1 className='name' style={{ color: backgroundColor }}>{name}</h1>
+      <h2>{designation}</h2>
       <hr style={{ backgroundColor: backgroundColor }} />
       <div className='links'>
-        <p><span>Portfolio Link</span> - www.something.com</p>
-        <p><span>Newsletter Link</span> - www.something.com</p>
+        <p><span>Portfolio Link</span> - {portfolio}</p>
+        <p><span>Newsletter Link</span> - {newsletter}</p>
       </div>
       <div className='about'>
         <h1>ABOUT ME</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum amet possimus minima nesciunt quod facilis adipisci eum ipsa officiis commodi sunt autem odio repudiandae atque tempore illo nisi, dolore incidunt.</p>
+        <p>{about}</p>
       </div>
       <div className='awards-info'>
         <h1>AWARDS & RECOGNITIONS</h1>

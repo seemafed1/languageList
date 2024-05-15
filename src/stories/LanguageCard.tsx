@@ -30,6 +30,7 @@ const LanguageCard = ({ banner, title, hoverColor, backgroundColor}: Props) => {
       style={cardStyle}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onClick={() => alert(`${title} language is selected`)}
       >
         <h1>{banner}</h1>
         <p>{title}</p>

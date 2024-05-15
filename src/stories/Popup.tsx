@@ -1,40 +1,43 @@
 import React, { useState } from "react";
-import PopupContent from "./PopupContent";
-import Buttonitems from './Button';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
+import './popup.css'
+import { Dialog } from "@mui/material";
 
-export interface PopupProps {
-  id: number;
-  title: string;
-  children?: any;
-  buttonTitle: string;
-  buttonFunction?: () => void;
-  slide?: 'up' | 'down' | 'right' | 'left';
+type Props = {
+  title: string,
+  childTitle: string,
+  confirm: () => void
 }
-const Popup = ({ id, title, children, buttonTitle, buttonFunction, slide }: PopupProps) => {
-  const [modalOpen, setModalOpen] = useState<boolean>(false);
-  const handleClose = () => {
-    setModalOpen(false);
-  };
-  const handleopen = () => {
-    setModalOpen(true);
-  };
+const Popup = ({ title, childTitle, confirm }: Props) => {
+  const [open, setOpen] = useState<boolean>(false);
+  
   return (
-    <div className=" mx-auto py-20">
-      <button
-        onClick={handleopen}
-        // className={`rounded-full bg-primary px-6 py-3 text-base font-medium text-white`}
-      >
-        Open Modal
-      </button>
-     { modalOpen && 
-          <PopupContent
-            {...{ id, title, children, buttonTitle,slide }} 
-            modalOpen={modalOpen} 
-            handleClose={handleClose} 
-            buttonFunction={buttonFunction}
-            />
-      }
+    <div>
+      <button type="button" className="popup-button" onClick={()=> setOpen(true)}>Click here</button>
+      {
+          open && <Dialog open={open} onClose={() => setOpen(false)}>
+            <div className="popup">
+                  <div className="popup-tag">
+                    <h2>{title}</h2>
+                    <p>{childTitle}</p>
+                  </div>
+                  <div className="buttons">
+                    <button
+                      onClick={confirm}
+                      className="popup-button"
+                    >
+                      Confirm
+                    </button>
+                    <button
+                     onClick={()=> setOpen(false)}
+                      className="popup-btn"
+                    >
+                      Go Back
+                    </button>
+                  </div>
+              </div>
+          </Dialog>
+        }
     </div>
   );
 };

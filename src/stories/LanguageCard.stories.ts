@@ -15,7 +15,7 @@ const meta = {
     backgroundColor: { control: 'color' },
     hoverColor: { control: 'color' },
   },
-  args: { onClick: fn() },
+  // args: { onClick: fn() },
 } satisfies Meta<typeof LanguageCard>;
 
 export default meta;

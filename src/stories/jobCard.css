@@ -1,6 +1,6 @@
-body {
-    /* background-color: rgb(212, 208, 208); */
-    font-family: Arial, sans-serif;
+    body{
+        font-family: 'Poppins', sans-serif;
+
 }
 
 .job-card {
@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    margin: 0.3rem 0;
+    /* margin: 0.3rem 0; */
 }
 
 .job-city {
@@ -80,22 +80,33 @@ body {
 display: flex;
 align-items: center;
 }
+.job-Type-info h3{
+    margin: 0;
+    color: #3AD3B0;
+}
 
 .job-info {
     display: flex;
     justify-content: space-between;
-    padding: 0.3rem 0;
+    padding:  0 0 0.5rem 0;
 }
 
-.job-info p {
+.job-info .job-info-logo p {
     opacity: 0.4;
-    margin: 0 6px;
+    margin: 10px 0 0 16px;
 }
 .job-info-logo{
     display: flex;
     align-items: center;
-    padding:  0.3rem 0;
+    /* padding:  0.3rem 0; */
 }
+.job-info-logo h3{
+    margin: 0;
+    opacity: 0.5;
+    width: 7.25px;
+    height: 9.5px;
+}
+
 
 .btn .btn-1 {
     background-color: #002351;
@@ -122,4 +133,16 @@ align-items: center;
     margin:  0.3rem 0;
     cursor: pointer;
     background: transparent;
+}
+.share-save{
+    display: flex;
+}
+.save {
+    color: #FE8B4C;
+}
+.share-save button{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    opacity: 0.7;
 }

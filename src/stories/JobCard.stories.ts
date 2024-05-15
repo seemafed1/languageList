@@ -1,6 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { fn } from '@storybook/test';
-import { LanguageData } from '@/constants/language';
 import JobCard from './JobCard';
 
 const meta = {
@@ -11,9 +9,8 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    backgroundColor: { control: 'color' },
   },
-  args: { onClick: fn() },
+  // args: { onClick: action('clicked') },
 } satisfies Meta<typeof JobCard>;
 
 export default meta;
@@ -22,11 +19,19 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     primary: true,
+    brandName: 'Indian Bier House',
+    department: 'Executive Chef ',
     city: 'Pune', 
     salary: '70000-90000/M', 
     applicants: '999', 
     jobType: 'Internship', 
     postedDate: '1 week ago',
-    urgentHiring: true
+    urgentHiring: true,
+    save: true,
+    saveCard: () => alert('Card is saved'),
+    shareCard: () => alert('Card is shared'),
+    apply: () => alert('Apply successfully'),
+    view: () => alert('view detail')
   },
 };
+
