@@ -1,8 +1,8 @@
 export const skills = ['HTML5','CSS3','JavaScript', 'React Js', 'Next Js']
 
 export const educations = [
-    { levelOfEducation: 'Diploma', institution: 'Savitribai Phule University', cgpa: 7.9, graduarionYear: '2019-2022' },
-    { levelOfEducation: 'Diploma', institution: 'Savitribai Phule University', cgpa: 7.9, graduarionYear: '2019-2022' }
+    { levelOfEducation: 'Diploma', institution: 'Savitribai Phule University', cgpa: '7.9', graduarionYear: '2019-2022' },
+    { levelOfEducation: 'Diploma', institution: 'Savitribai Phule University', cgpa: '7.9', graduarionYear: '2019-2022' }
 ]
 
 export const languages = ['English', 'Marathi', 'Hindi', 'Kanada']

@@ -1,6 +1,6 @@
 import { LanguageData } from "@/constants/language";
-import VisitingCard from "./components.tsx/Cv";
-import Cv from "./components.tsx/Cv";
+import VisitingCard from "./components/Cv";
+import Cv from "./components/Cv";
 
 export default function Home() {
 

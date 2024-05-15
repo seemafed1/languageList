@@ -1,6 +1,6 @@
 import React from 'react';
-import Experience from './Experience';
-import Education from './Education';
+import Experience from '../../stories/Experience';
+import Education from '../../stories/Education';
 import './cv.css'
 import { experience } from '@/constants/create-cv';
 

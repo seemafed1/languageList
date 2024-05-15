@@ -9,12 +9,12 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-// import './cv.css'
+import './cv.css'
 
-const Education = () => {
+const Education = ({skills, educations, languages}: any) => {
   return (
     <div className='education'>
-      <Image src={female} alt='no img' width={200} height={200} className='rounded-full'/>
+      <Image src={female} alt='no img' width={200} height={200} className='img'/>
       <div className='user-info'>
         <p><PhoneIcon/> &nbsp; +123-456-7890</p>
         <p><WhatsAppIcon/> &nbsp; +123-456-7890</p>
