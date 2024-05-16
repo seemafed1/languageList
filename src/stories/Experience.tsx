@@ -20,7 +20,7 @@ const Experience = ({ awards, references, experience, name, designation, about, 
           {
             awards && awards.map((award: any) => (
               <div key={award.id} className='award'>
-                <p>{award.competion}</p>
+                <p>{award.competition}</p>
                 <p>{award.brandName}</p>
                 <p>{award.department}, {award.position} </p>
               </div>
@@ -52,7 +52,7 @@ const Experience = ({ awards, references, experience, name, designation, about, 
         <div className='expedience-detail'>
 
           {
-            experience && experience.slice(0, 4).map((experience: any) => (
+            experience && experience.slice(0, 3).map((experience: any) => (
               <div key={experience.id} className='exp-detail'>
                 <p>{experience.duration}</p>
                 <p>{experience.companyName}, {experience.address}</p>
@@ -60,25 +60,7 @@ const Experience = ({ awards, references, experience, name, designation, about, 
               </div>
             ))
           }
-          {/* <Timeline>
-            <TimelineItem>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent>
-              {
-            experience && experience.slice(0, 4).map((experience: any) => (
-              <div key={experience.id} className='exp-detail'>
-                <p>{experience.duration}</p>
-                <p>{experience.companyName}, {experience.address}</p>
-                <p className='expedience-department'>{experience.department}, {experience.position}</p>
-              </div>
-            ))
-          }
-              </TimelineContent>
-            </TimelineItem>
-          </Timeline> */}
+         
         </div>
       </div>
     </div>

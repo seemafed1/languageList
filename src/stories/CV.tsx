@@ -2,15 +2,16 @@ import React from 'react';
 import './cv.css'
 import Education from './Education';
 import Experience from './Experience';
+import backgroundImg  from './assets/webImages/backGround.png'
 
 type EducationProps = {
   levelOfEducation: string,
   institution: string,
   cgpa: string,
-  graduarionYear: string
+  graduartionYear: string
 }
 type AwardProps = {
-  competion: string,
+  competition: string,
   brandName: string,
   department: string,
   position: string
@@ -86,12 +87,12 @@ const CV = ({ skills, educations, languages, awards, references, experience, nam
       </div>
       <div className='next-page'>
         {
-          experience.length > 4 &&
+          experience.length > 3 &&
           <div className='next-page-main '>
             <div className='navbar' style={{ backgroundColor: backgroundColor }}></div>
             <div className='sub-exp'>
               {
-                experience && experience.slice(4).map((experience: any) => (
+                experience && experience.slice(3).map((experience: any) => (
                   <div key={experience.id} className='exp-detail'>
                     <p>{experience.duration}</p>
                     <p>{experience.companyName}, {experience.address}</p>

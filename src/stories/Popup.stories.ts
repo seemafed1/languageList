@@ -22,7 +22,7 @@ export const Primary: Story = {
   args: {
     // primary: true,
     title : 'Are You Sure ?',
-    childTitle : 'You can edit your popup box later.',
+    childTitle : 'You can edit your popup box later You can edit your popup box later.',
     confirm: () => {
       alert('Are you confirm')
     } 

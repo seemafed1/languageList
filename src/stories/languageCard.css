@@ -19,6 +19,7 @@
 .card h1{
     margin-bottom: 0;
     font-size: 32px;
+    z-index: 2;
 }
 .card p{
     font-weight: 400;

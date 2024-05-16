@@ -28,7 +28,7 @@ const Education = ({skills, educations, image, phone, whatsApp, email, instagram
             <div className='education-data' key={education.id}>
               <h2>{education.levelOfEducation}</h2>
               <h3>{education.institution}, {education.cgpa}</h3>
-              <p>{education.graduarionYear}</p>
+              <p>{education.graduationYear}</p>
             </div>
           ))
         }
