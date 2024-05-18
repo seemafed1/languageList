@@ -9,6 +9,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px 0;
     width: 296px;
+   
 }
 
 .list-image {
@@ -36,4 +37,15 @@
     font-weight: 400;
     size: 16px;
     margin-top: 4px;
+}
+
+@media (max-width: 400px) {
+    .language-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .card-list {
+        width: 100%;
+    }
 }

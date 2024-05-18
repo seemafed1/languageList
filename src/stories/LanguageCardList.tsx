@@ -22,9 +22,7 @@ const LanguageCardList = ({ languageData, hoverColor, backgroundColor }: Props) 
             <div className='language-grid'>
                 {
                     languageData && languageData?.map((language: any) => (
-                        // <div className='card-list' key={language.id} style={{backgroundColor: backgroundColor}}>
                             <LanguageCard  banner={language.banner} title={language.title} backgroundColor={backgroundColor} hoverColor={hoverColor}/>
-                        // </div>
                     ))
                 }
             </div>

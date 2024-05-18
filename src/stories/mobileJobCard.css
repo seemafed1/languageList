@@ -83,6 +83,7 @@ align-items: center;
 .job-Type-info h3{
     margin: 0;
     color: #3AD3B0;
+    padding: 4px 0 0 0;
 }
 
 .job-info {
@@ -91,22 +92,26 @@ align-items: center;
     padding:  0 0 0.5rem 0;
 }
 
-.job-info .job-info-logo p {
+ .job-info-logo p {
     opacity: 0.4;
-    margin: 10px 0 0 16px;
+    margin: 0;
+    font-size: 17px;
+    background-color: white;
 }
 .job-info-logo{
     display: flex;
     align-items: center;
+    /* background-color: red; */
     /* padding:  0.3rem 0; */
 }
 .job-info-logo h3{
     margin: 0;
-    opacity: 0.5;
-    width: 7.25px;
-    height: 9.5px;
+    opacity: 0.3;
+    font-size: 0px;
+    /* background-color: white; */
+    /* width: 7px; */
+    /* height: 8px; */
 }
-
 
 .btn .btn-1 {
     background-color: #002351;
@@ -116,9 +121,9 @@ align-items: center;
     border-radius: 10px;
     border: 1px;
     font-size: 14px;
-    padding: 10px,95px,10px,95px;
+    padding: 10px,95px;
     font-weight: 600;
-    margin:  0.3rem 0;
+    margin:  1.1rem 0 0 0;
     cursor: pointer;
 }
 .btn .btn-2{
@@ -130,19 +135,24 @@ align-items: center;
     font-size: 14px;
     font-weight: 100;
     padding-left: 3.5rem;
-    margin:  0.3rem 0;
+    margin:  1.1rem 0 0 0;
     cursor: pointer;
     background: transparent;
 }
 .share-save{
     display: flex;
+    /* opacity: 0.4; */
 }
-.save {
+.save-true {
     color: #FE8B4C;
 }
+.save-false, .share{
+    opacity: 0.4;
+}
+
 .share-save button{
     border: none;
     cursor: pointer;
     background: transparent;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
