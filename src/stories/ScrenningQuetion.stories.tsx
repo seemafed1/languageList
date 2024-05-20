@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import MobileJobCard from './MobileJobCard';
+import ScreeningQuetion from './ScreeningQuetion';
 
 const meta = {
-  title: 'Example/MobileJobCard',
-  component: MobileJobCard,
+  title: 'Example/ScreeningQuetion',
+  component: ScreeningQuetion,
   parameters: {
     layout: 'centered',
   },
@@ -11,22 +11,14 @@ const meta = {
   argTypes: {
   },
   // args: { onClick: action('clicked') },
-} satisfies Meta<typeof MobileJobCard>;
+} satisfies Meta<typeof ScreeningQuetion>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    // primary: true,
-    brandName: 'Indian Bier House',
-    department: 'Executive Chef ',
-    city: 'Pune', 
-    salary: '70000-90000/M', 
-    applicants: '777', 
-    jobType: 'Internship', 
-    postedDate: new Date(),
-    urgentHiring: true,
+    primary: true,
     saveCard: () => console.log('successfully'),
     shareCard: () => alert('Card is shared'),
     apply: () => alert('Apply successfully'),

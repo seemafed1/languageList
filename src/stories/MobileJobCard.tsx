@@ -65,8 +65,6 @@ const JobCard = ({ city, salary, applicants, jobType, postedDate, urgentHiring, 
             return 'just now';
         }
     };
-
-    
     
     return (
         <div className='job-card' style={{ backgroundColor: backgroundColor }}>
