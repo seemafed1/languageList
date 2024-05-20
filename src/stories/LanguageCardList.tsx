@@ -1,6 +1,7 @@
 import React from 'react';
 import './languageCardList.css'
 import LanguageCard from './LanguageCard';
+import { DesktopNavbar } from './DesktopNavbar';
 
 
 type LanguageCardProps = {
